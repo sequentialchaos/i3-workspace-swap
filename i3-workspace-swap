@@ -1,4 +1,4 @@
-#! /bin/python
+#!/usr/bin/env python3
 
 from i3ipc import Connection
 from subprocess import Popen, PIPE, STDOUT
@@ -56,7 +56,7 @@ def main(argv):
     # workspace names
     sname = None
     dname = None
-    swap_name = str(time.time_ns())
+    swap_name = str(time.time())
 
     # workspace ids
     destination = None
